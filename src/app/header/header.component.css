@@ -1,0 +1,8 @@
+.header {
+    background-color: lightblue;
+    min-height: 25px;
+    padding: 12.5px;
+}
+.headerElement {
+    margin: 5px;
+}

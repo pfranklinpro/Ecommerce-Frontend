@@ -1,0 +1,13 @@
+<h1>Cart</h1>
+<div *ngFor="let product of products">
+    {{product.productName}}
+    <br>
+    {{product.productPrice}}
+    <br>
+    <br>
+</div>
+<div>Total Price: {{totalPrice}}</div>
+<br>
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <button>Purchase</button>
+</form>

@@ -1,0 +1,12 @@
+<div class="header">
+    <a class="headerElement" href="">Home</a>
+    <a *ngIf="showLogin()" class="headerElement" href="/signin">Login</a>
+    <br *ngIf="showUsername()">
+    <span class="headerElement" *ngIf="showUsername()">Logged in as {{username}} from {{country}}</span>
+    <img
+        [src]="flagSrc"
+        [srcset]="flagSrcset"
+        width="16"
+        height="12"
+        [alt]="country">
+</div>
